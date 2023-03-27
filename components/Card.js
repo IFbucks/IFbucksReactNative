@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { View, Image, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import React, { useState } from "react";
+import { View, Image, Text, TouchableOpacity, StyleSheet } from "react-native";
 
 const PhotoCard = ({ imageProduct }) => {
   const [add, setAdd] = useState(0);
@@ -13,7 +13,10 @@ const PhotoCard = ({ imageProduct }) => {
       <Image source={{ uri: imageProduct }} style={styles.image} />
       <View style={styles.addContainer}>
         <TouchableOpacity onPress={handleaddPress}>
-          <Text style={styles.add}> <button> + {add} adicionar</button></Text>
+          <Text style={styles.add}>
+            {" "}
+            <button> + {add} adicionar</button>
+          </Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -23,34 +26,34 @@ const PhotoCard = ({ imageProduct }) => {
 const styles = StyleSheet.create({
   card: {
     borderWidth: 1,
-    borderColor: '#ddd',
+    borderColor: "#ddd",
     borderRadius: 10,
-    overflow: 'hidden',
+    overflow: "hidden",
     marginBottom: 20,
     marginTop: 20,
     marginLeft: 20,
     marginRight: 20,
   },
   image: {
-    width: '100%',
-    height: 150,
+    width: "100%",
+    height: 350,
   },
   likesContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    backgroundColor: '#fff',
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    backgroundColor: "#fff",
     paddingVertical: 10,
     paddingHorizontal: 15,
   },
   add: {
     fontSize: 20,
-    color: '#333',
+    color: "#333",
     marginLeft: 10,
   },
   button: {
-   borderColor: 'black'
-  }
+    borderColor: "black",
+  },
 });
 
 export default PhotoCard;
