@@ -18,6 +18,6 @@ const styles = StyleSheet.create({
   headerText: {
     color: "black",
     fontSize: 25,
-    marginTop:30,
+    marginTop: 30,
   },
 });

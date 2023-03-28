@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { View, Image, Text, TouchableOpacity, Button, StyleSheet } from "react-native";
+import {
+  View,
+  Image,
+  Text,
+  TouchableOpacity,
+  Button,
+  StyleSheet,
+} from "react-native";
 
 const PhotoCard = ({ desc, imageProduct }) => {
   const [add, setAdd] = useState(0);
@@ -11,12 +18,15 @@ const PhotoCard = ({ desc, imageProduct }) => {
   return (
     <View style={styles.card}>
       <Image source={{ uri: imageProduct }} style={styles.image} />
-      <Text>{desc}</Text>
+      <Text style={styles.desc}>{desc}</Text>
       <View style={styles.addContainer}>
-        <TouchableOpacity >
+        <TouchableOpacity>
           <Text style={styles.add}>
             {" "}
-            <Button onPress={() => setAdd(add+1)} title={"+ " + add.toString() + " adicionar"} />
+            <Button
+              onPress={() => setAdd(add + 1)}
+              title={"+ " + add.toString() + " adicionar"}
+            />
           </Text>
         </TouchableOpacity>
       </View>
@@ -52,8 +62,10 @@ const styles = StyleSheet.create({
     color: "#333",
     marginLeft: 10,
   },
-  button: {
-    borderColor: "black",
+  desc: {
+    fontSize: 20,
+    textAlign: "center",
+    padding: 20,
   },
 });
 
