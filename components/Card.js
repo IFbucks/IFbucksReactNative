@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Image, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Image, Text, TouchableOpacity, Button, StyleSheet } from "react-native";
 
 const PhotoCard = ({ imageProduct }) => {
   const [add, setAdd] = useState(0);
@@ -15,7 +15,7 @@ const PhotoCard = ({ imageProduct }) => {
         <TouchableOpacity onPress={handleaddPress}>
           <Text style={styles.add}>
             {" "}
-            <button> + {add} adicionar</button>
+            <Button> + {add} adicionar</Button>
           </Text>
         </TouchableOpacity>
       </View>
