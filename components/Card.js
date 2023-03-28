@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { View, Image, Text, TouchableOpacity, Button, StyleSheet } from "react-native";
 
-const PhotoCard = ({ imageProduct }) => {
+const PhotoCard = ({ desc, imageProduct }) => {
   const [add, setAdd] = useState(0);
 
   const handleaddPress = () => {
@@ -11,11 +11,12 @@ const PhotoCard = ({ imageProduct }) => {
   return (
     <View style={styles.card}>
       <Image source={{ uri: imageProduct }} style={styles.image} />
+      <Text>{desc}</Text>
       <View style={styles.addContainer}>
-        <TouchableOpacity onPress={handleaddPress}>
+        <TouchableOpacity >
           <Text style={styles.add}>
             {" "}
-            <Button> + {add} adicionar</Button>
+            <Button onPress={() => setAdd(add+1)} title={"+ " + add.toString() + " adicionar"} />
           </Text>
         </TouchableOpacity>
       </View>

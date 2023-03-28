@@ -10,7 +10,7 @@ export default function Header() {
 const styles = StyleSheet.create({
   header: {
     backgroundColor: "#84e082",
-    padding: 15,
+    padding: 20,
     width: "100%",
     alignContent: "center",
     alignItems: "center",
@@ -18,5 +18,6 @@ const styles = StyleSheet.create({
   headerText: {
     color: "black",
     fontSize: 25,
+    marginTop:30,
   },
 });
