@@ -57,10 +57,10 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 15,
   },
-  add: {
-    fontSize: 20,
-    color: "#333",
-    marginLeft: 10,
+  addContainer: {
+  padding: 10,
+  marginLeft: 20,
+  paddingBottom: 20,
   },
   desc: {
     fontSize: 20,
