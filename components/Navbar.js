@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+
 import { AntDesign } from '@expo/vector-icons';
 
 const Navbar = () => {
@@ -15,8 +16,8 @@ const Navbar = () => {
       <AntDesign name="menuunfold" size={24} color="black"/>
       </TouchableOpacity>
       {menuOpen && (
-        <View>
-          <TouchableOpacity>
+        <View style={styles.textos}>
+          <TouchableOpacity >
             <Text>Bebidas quentes</Text>
           </TouchableOpacity>
           <TouchableOpacity>
@@ -31,6 +32,11 @@ const Navbar = () => {
   );
 };
 
+const styles =  StyleSheet.create({
+textos: {
+  fontSize: 30,
+}
 
+});
 
 export default Navbar;
