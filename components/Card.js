@@ -20,7 +20,7 @@ const PhotoCard = ({ desc, imageProduct }) => {
       <Image source={{ uri: imageProduct }} style={styles.image} />
       <Text style={styles.desc}>{desc}</Text>
       <View style={styles.addContainer}>
-        <TouchableOpacity>
+        <TouchableOpacity style={styles.adicionar}>
           <Text style={styles.add}>
             {" "}
             <Button
@@ -59,13 +59,18 @@ const styles = StyleSheet.create({
   },
   addContainer: {
   padding: 10,
-  marginLeft: 20,
+  marginLeft:20,
+  marginRight:20,
   paddingBottom: 20,
   },
   desc: {
     fontSize: 20,
     textAlign: "center",
-    padding: 20,
+    padding: 10,
+  },
+  adicionar:{
+    borderRadius: 10,
+    borderWidth: 0.5, 
   },
 });
 

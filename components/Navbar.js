@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
+import { AntDesign } from '@expo/vector-icons';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,19 +11,19 @@ const Navbar = () => {
 
   return (
     <View>
-      <TouchableOpacity onPress={handleMenuPress}>
-        <Text>≡</Text>
+      <TouchableOpacity onPress={handleMenuPress} >
+      <AntDesign name="menuunfold" size={24} color="black"/>
       </TouchableOpacity>
       {menuOpen && (
         <View>
           <TouchableOpacity>
-            <Text>Opção 1</Text>
+            <Text>Bebidas quentes</Text>
           </TouchableOpacity>
           <TouchableOpacity>
-            <Text>Opção 2</Text>
+            <Text>Bebidas geladas</Text>
           </TouchableOpacity>
           <TouchableOpacity>
-            <Text>Opção 3</Text>
+            <Text>Comidas</Text>
           </TouchableOpacity>
         </View>
       )}
@@ -30,9 +31,6 @@ const Navbar = () => {
   );
 };
 
-/*const styles = StyleSheet.create({
-    
-  });*/
-  
+
 
 export default Navbar;
