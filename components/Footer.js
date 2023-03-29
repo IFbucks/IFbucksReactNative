@@ -1,9 +1,11 @@
 import { StyleSheet, View, Text } from "react-native";
+import { AntDesign } from '@expo/vector-icons';
 
 export default function Footer() {
     return (
       <View style={styles.footer}>
-        <Text style={styles.footerText}>Footer</Text>
+        <Text style={styles.footerText}>Footer <AntDesign name="copyright" size={15} color="black" /></Text>
+        <AntDesign name="barcode" size={24} color="black" />
       </View>
     );
   }

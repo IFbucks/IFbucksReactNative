@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-
+import { EvilIcons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <View>
       <TouchableOpacity onPress={handleMenuPress} >
-      <AntDesign name="menuunfold" size={30} color="black"/>
+      <EvilIcons name="navicon" size={40} color="black" style={styles.menuIco}/>
       </TouchableOpacity>
       {menuOpen && (
         <View >
@@ -35,9 +35,12 @@ const Navbar = () => {
 const styles =  StyleSheet.create({
 textos: {
   fontSize: 20,
+},
+menuIco:{
+  padding: 10,
 }
 
 });
-/*colcocar topicos de bebidas e comida no h1, arrumar footer, arrumar menu <tamanho>, arrumar coresy*/
+/* arrumar footer, arrumar cores*/
 
 export default Navbar;
