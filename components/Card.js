@@ -58,10 +58,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
   },
   addContainer: {
-  padding: 10,
-  marginLeft:20,
-  marginRight:20,
-  paddingBottom: 20,
+    padding: 10,
+    marginLeft:20,
+    marginRight:20,
+    paddingBottom: 20,
   },
   desc: {
     fontSize: 20,
@@ -76,3 +76,5 @@ const styles = StyleSheet.create({
 });
 
 export default PhotoCard;
+
+

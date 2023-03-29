@@ -13,18 +13,18 @@ const Navbar = () => {
   return (
     <View>
       <TouchableOpacity onPress={handleMenuPress} >
-      <AntDesign name="menuunfold" size={24} color="black"/>
+      <AntDesign name="menuunfold" size={30} color="black"/>
       </TouchableOpacity>
       {menuOpen && (
-        <View style={styles.textos}>
+        <View >
           <TouchableOpacity >
-            <Text>Bebidas quentes</Text>
+            <Text style={styles.textos}>Bebidas quentes</Text>
           </TouchableOpacity>
           <TouchableOpacity>
-            <Text>Bebidas geladas</Text>
+            <Text style={styles.textos}>Bebidas geladas</Text>
           </TouchableOpacity>
           <TouchableOpacity>
-            <Text>Comidas</Text>
+            <Text style={styles.textos}>Comidas</Text>
           </TouchableOpacity>
         </View>
       )}
@@ -34,9 +34,10 @@ const Navbar = () => {
 
 const styles =  StyleSheet.create({
 textos: {
-  fontSize: 30,
+  fontSize: 20,
 }
 
 });
+/*colcocar topicos de bebidas e comida no h1, arrumar footer, arrumar menu <tamanho>, arrumar coresy*/
 
 export default Navbar;

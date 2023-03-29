@@ -1,5 +1,7 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, ScrollView, View } from "react-native";
+import { StyleSheet, ScrollView, View, Text } from "react-native";
+import { Feather } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import Header from "./components/Header";
 import PhotoCard from "./components/Card";
 import Navbar from "./components/Navbar";
@@ -13,6 +15,9 @@ export default function App() {
         <Navbar />
       </View>
       <ScrollView>
+        <Text style={styles.drinksFoodTitle}> Bebidas Quentes <Feather name="coffee" size={24} color="black" /> </Text>
+        <Text style={styles.drinksFoodTitle}> Bebidas Geladas <Feather name="coffee" size={24} color="black" /> </Text>
+        <Text style={styles.drinksFoodTitle}> Comidas <MaterialCommunityIcons name="food-croissant" size={24} color="black" /> </Text>
         <PhotoCard
           desc="Caffe 1"
           imageProduct="https://storage.googleapis.com/thecoffee-ws/images/quente-vanilla-latte_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680550106&Signature=hReqhnEI0QVrnfIZNMXGF8gOWWkqeprK5eReg%2FjuzCeuTQAGz%2BHNgHwtiotEHD2eHGuwEWARUlR3yfyJhmyHP1OwVq0kQncjA3fJb%2FjmBqXY7x3G3n5Fn2jNSImoy5ZRAOZI8KwMIWx9szhF3EysTCPCkikfF2Pnzu6m88PZAw1EofXhnuFoAmmHbrCfUYSzNvZWJbloGLsb3pL%2Fynhi1AEE3SwzbmbI%2FG0MEw%2BIXfs09J8AaUl3Ggs5YxaeqrXzBiAp9uQ7NVMaYdWvkqzPt70zxVjps0OYlyOC65FJ2yyfYr%2B6YOVQw6r75gR9n%2FDemk8yXVN9gqg9c4YZuYOvQw%3D%3D"
@@ -70,4 +75,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     flexWrap: "nowrap",
   },
+
+  drinksFoodTitle: {
+    fontSize: 30,
+    padding: 10,
+  }
 });
