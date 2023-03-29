@@ -1,7 +1,6 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, ScrollView, View, Text } from "react-native";
-import { Feather } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { Feather } from "@expo/vector-icons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Header from "./components/Header";
 import PhotoCard from "./components/Card";
 import Navbar from "./components/Navbar";
@@ -15,7 +14,10 @@ export default function App() {
         <Navbar />
       </View>
       <ScrollView>
-        <Text style={styles.drinksFoodTitle}> Bebidas Quentes <Feather name="coffee" size={24} color="black" /> </Text>
+        <Text style={styles.drinksFoodTitle}>
+          {" "}
+          Bebidas Quentes <Feather name="coffee" size={24} color="black" />{" "}
+        </Text>
         <PhotoCard
           desc="Simple Coffee"
           imageProduct="https://storage.googleapis.com/thecoffee-ws/images/quente-vanilla-latte_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680550106&Signature=hReqhnEI0QVrnfIZNMXGF8gOWWkqeprK5eReg%2FjuzCeuTQAGz%2BHNgHwtiotEHD2eHGuwEWARUlR3yfyJhmyHP1OwVq0kQncjA3fJb%2FjmBqXY7x3G3n5Fn2jNSImoy5ZRAOZI8KwMIWx9szhF3EysTCPCkikfF2Pnzu6m88PZAw1EofXhnuFoAmmHbrCfUYSzNvZWJbloGLsb3pL%2Fynhi1AEE3SwzbmbI%2FG0MEw%2BIXfs09J8AaUl3Ggs5YxaeqrXzBiAp9uQ7NVMaYdWvkqzPt70zxVjps0OYlyOC65FJ2yyfYr%2B6YOVQw6r75gR9n%2FDemk8yXVN9gqg9c4YZuYOvQw%3D%3D"
@@ -35,8 +37,11 @@ export default function App() {
         <PhotoCard
           desc="Urban Coffee"
           imageProduct="https://storage.googleapis.com/thecoffee-ws/images/quente-urban-chocolat_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680736593&Signature=SvrTyEP%2FcaH9RFq6YPLK7CDG7HTs8%2Bqgjg%2F35lULTKavOy5bFXhMZcpgP32R9aTBVlDE5zpLecu4BA5%2FGlHSdBBObbklVNRji4AySK0fQe%2BLl%2FuxfTDjCGmquHr5KKeD3A2%2BJPeYrVGtZ4SIufnlKvc%2FTrxn6IqM0k2pdKBzZQmeL0c641J5TgDROR03o3C7%2Bs9ZNwaobL%2BTu8Qt%2FRDiPE8p8MjVkp7CGyzSQNbNKpCcydErS3XJoDbVsr5%2Bx0SfAjiRoUY4EOA3tXKFbTVYAMN%2FRIBtHFdi%2Fkj69XdxT1sCfr0g2EDJV%2FQ7xObgjKxFUGAGgvgUG4seBhR5EQvRuw%3D%3D"
-        />  
-        <Text style={styles.drinksFoodTitle}> Bebidas Geladas <Feather name="coffee" size={24} color="black" /> </Text>
+        />
+        <Text style={styles.drinksFoodTitle}>
+          {" "}
+          Bebidas Geladas <Feather name="coffee" size={24} color="black" />{" "}
+        </Text>
         <PhotoCard
           desc="Chai Iced Latte"
           imageProduct="https://storage.googleapis.com/thecoffee-ws/images/coado-gelado-com-leite_480x480.png?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680731600&Signature=kpWJp0teADu9nJ4%2F6LEmXBJwbIKmlZ9L2BhoaE6%2F4h7xIX9IVGThQXZfbjOzCScdW6iSPMhxIS3Quo%2BR6z5mIoKOkscp3IlBI12r0S%2B8aE%2BqmkWv7N2x2YsN92USgzvggdjsSHncGGuvtdnXPkbHQJbM6bohvs0XUlIbYbQDs6w094xkAdj0MbvlaYZmlaAowXLniHcluzruywAbSwqX5ADj3PX90H7AFxS1c%2Bgq%2FHX%2Bh4lZcw4O%2BO0cjBtK8Ko1vFvmrCqWJcLmGfVMP7rFgXpOk8BsRKnldDwKoJzWIuPmY8I93LiWciPq5BPXZM69D8VAoqH7H8tz6jwcHrCoyg%3D%3D"
@@ -57,7 +62,15 @@ export default function App() {
           desc="Iced Coffee"
           imageProduct="https://storage.googleapis.com/thecoffee-ws/images/289597159_824298858946865_289547150334147358_n_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680550106&Signature=Mdi24ukH7mmb8sheveTBwYiHNnGBilxV1bh7b%2Fq1s3acLrPqfG90GppZJyL%2FvMkuxZiLv4MeMGxuztOXVHX8Qn6NRR9lWm5BQNlX%2FDhyS5gEN3FhHY7zBIy2xyp45sRc0088omQUuOgjwitkdV%2FJqIbfQg5aNDzDGcO35C5IgsXKsqQKC4HCj%2BkxXNdJw1eFVCPif4uy7zj38%2BOkPE6zOTy%2BDeFfjXYXTIcgn9Ez7PYo7AN3skL2aWAcTVmMPNWgtto5vSwo3PI60FtoCSrq6vEmjuyRjA%2FUlA6rxlB7bJkEwtWmOSjlffKtG0fmx%2BcCIDVm3FaT1FkDGHLZmIpuyA%3D%3D"
         />
-        <Text style={styles.drinksFoodTitle}> Comidas <MaterialCommunityIcons name="food-croissant" size={24} color="black" /> </Text>
+        <Text style={styles.drinksFoodTitle}>
+          {" "}
+          Comidas{" "}
+          <MaterialCommunityIcons
+            name="food-croissant"
+            size={24}
+            color="black"
+          />{" "}
+        </Text>
         <PhotoCard
           desc="Croissant"
           imageProduct="https://storage.googleapis.com/thecoffee-ws/images/croissant-2_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680732780&Signature=AcJ7yqBvexncsmoK92A%2BuVOzwwfvBMgvGUuGwk3kufgXdMK%2B0IF4beqFwS8ld8dJSBs5HYZAl5vq0hqc6RoVKXGBTZ5eY8zCnDqzCONGHCalaJs5sveMKbmqLLPJfAluupBY%2B09sDkfka7Ev1IBKPeYTyzdnsc1mLqlxrFKz9LA%2FeZUU8rXFtuyVKaNw69%2BOhSVybe9xh2KzKng4SL3oW5AwyCJqYBscaEI2RGX9WEeLlBMf9GqXYifz5zUDPklfOKbNee9WgDhJcBkF7bN7UtfIuFnakmCHGnF5DBC%2F%2FGSW%2B4jIAz6bH3OfDe1xAo9V%2BQK1yd3Z3ib%2FGaGwHfhLNg%3D%3D"
@@ -70,7 +83,10 @@ export default function App() {
           desc="Bolo"
           imageProduct="https://storage.googleapis.com/thecoffee-ws/images/bolos-2_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680731601&Signature=oVBReTNWw2Hut0ov%2BaxSZJoXXdHpM6ema3NyTtKyr9%2BTgFODEQuZV9R%2BqR85P4jQUP1QiM15%2FdIJ1VQ03ON7QbcI03Bm%2BFe6Mben9mBEg3pTB%2BCCNeH%2FdlXzxBaU%2FoGsG8RecjoSaPwomDF9w5b7pL34yZIcpiozSiE8C3DGUbGnGcFK8alXrHEayEoD4buuv7UWyM6YmZJAZA1RIqtDEXDKttaExSfzD5b4RQeesypdM2%2FgZvorne9NJiIMcgkQUxzPDtyCMAiBCBNxPd%2FPd9rCzyxVgxKGpZSCdGWKNl%2BK4DdcCqfJoN19k8SsRfnIqd%2Fgw2VTSXZaPI5xKj8s%2BQ%3D%3D"
         />
-        <Text style={styles.drinksFoodTitle}> Combos <Feather name="coffee" size={24} color="black" /> </Text>
+        <Text style={styles.drinksFoodTitle}>
+          {" "}
+          Combos <Feather name="coffee" size={24} color="black" />{" "}
+        </Text>
 
         <PhotoCard
           desc="Black Coffee + Brownie"
@@ -82,10 +98,7 @@ export default function App() {
         />
         <Footer />
       </ScrollView>
-       
-
     </View>
-     
   );
 }
 
@@ -101,5 +114,5 @@ const styles = StyleSheet.create({
   drinksFoodTitle: {
     fontSize: 30,
     padding: 10,
-  }
+  },
 });

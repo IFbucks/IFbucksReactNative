@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { EvilIcons } from '@expo/vector-icons';
-import { AntDesign } from '@expo/vector-icons';
+import React, { useState } from "react";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { EvilIcons } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,12 +12,17 @@ const Navbar = () => {
 
   return (
     <View>
-      <TouchableOpacity onPress={handleMenuPress} >
-      <EvilIcons name="navicon" size={40} color="black" style={styles.menuIco}/>
+      <TouchableOpacity onPress={handleMenuPress}>
+        <EvilIcons
+          name="navicon"
+          size={40}
+          color="black"
+          style={styles.menuIco}
+        />
       </TouchableOpacity>
       {menuOpen && (
-        <View >
-          <TouchableOpacity >
+        <View>
+          <TouchableOpacity>
             <Text style={styles.textos}>Bebidas quentes</Text>
           </TouchableOpacity>
           <TouchableOpacity>
@@ -32,14 +37,14 @@ const Navbar = () => {
   );
 };
 
-const styles =  StyleSheet.create({
-textos: {
-  fontSize: 20,
-},
-menuIco:{
-  padding: 10,
-}
-
+const styles = StyleSheet.create({
+  textos: {
+    fontSize: 20,
+    padding: 5,
+  },
+  menuIco: {
+    padding: 10,
+  },
 });
 /* arrumar footer, arrumar cores*/
 
