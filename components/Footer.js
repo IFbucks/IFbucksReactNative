@@ -1,13 +1,22 @@
 import { StyleSheet, View, Text } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 export default function Footer() {
   return (
     <View style={styles.footer}>
       <Text style={styles.footerText}>
-        Footer <AntDesign name="copyright" size={15} color="black" />
       </Text>
-      <AntDesign name="barcode" size={24} color="black" />
+      <Text style={styles.footerText}>
+        {" "}
+        <MaterialCommunityIcons
+          name="cellphone-sound"
+          size={24}
+          color="black"
+        />
+        Contact us  !
+      </Text>
+      
     </View>
   );
 }
@@ -15,11 +24,11 @@ export default function Footer() {
 const styles = StyleSheet.create({
   footer: {
     backgroundColor: "#f1f1f1",
-    padding: 10,
-    width: "100%",
+    padding: 5,
+    /*width: "100%",
     alignContent: "center",
     alignItems: "center",
-    /*position: 'absolute',
+    position: 'absolute',
     bottom: 0,
     left: 0,
     right: 0,
@@ -30,7 +39,10 @@ const styles = StyleSheet.create({
   },
   footerText: {
     color: "black",
-    fontSize: 20,
-    marginTop: 20,
+    fontSize: 18,
+    padding: 8,
   },
 });
+
+/*<AntDesign name="barcode" size={24} color="black" />
+        <AntDesign name="copyright" size={13} color="black" />*/

@@ -17,7 +17,8 @@ const PhotoCard = ({ desc, imageProduct }) => {
 
   return (
     <View style={styles.card}>
-      <Image source={{ uri: imageProduct }} style={styles.image} />
+      <Image source={{ uri: imageProduct }} style={styles.image}
+      resizeMode="contain" />
       <Text style={styles.desc}>{desc}</Text>
       <View style={styles.addContainer}>
         <TouchableOpacity style={styles.adicionar}>
@@ -59,8 +60,8 @@ const styles = StyleSheet.create({
   },
   addContainer: {
     padding: 10,
-    marginLeft:20,
-    marginRight:20,
+    marginLeft: 20,
+    marginRight: 20,
     paddingBottom: 20,
   },
   desc: {
@@ -68,13 +69,11 @@ const styles = StyleSheet.create({
     textAlign: "center",
     padding: 10,
   },
-  adicionar:{
+  adicionar: {
     borderRadius: 10,
-    borderWidth: 0.5, 
+    borderWidth: 0.5,
     borderColor: "#c4c4c4",
   },
 });
 
 export default PhotoCard;
-
-

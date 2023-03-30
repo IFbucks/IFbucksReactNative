@@ -85,7 +85,11 @@ export default function App() {
         />
         <Text style={styles.drinksFoodTitle}>
           {" "}
-          Combos <Feather name="coffee" size={24} color="black" />{" "}
+          Combos <MaterialCommunityIcons
+            name="candy"
+            size={30}
+            color="black"
+          />{" "}
         </Text>
 
         <PhotoCard
