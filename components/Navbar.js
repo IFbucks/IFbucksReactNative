@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { EvilIcons } from "@expo/vector-icons";
-import { AntDesign } from "@expo/vector-icons";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -46,6 +45,5 @@ const styles = StyleSheet.create({
     padding: 10,
   },
 });
-/* arrumar footer, arrumar cores*/
 
 export default Navbar;

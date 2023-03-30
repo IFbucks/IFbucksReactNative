@@ -34,6 +34,3 @@ const styles = StyleSheet.create({
     padding: 8,
   },
 });
-
-/*<AntDesign name="barcode" size={24} color="black" />
- */

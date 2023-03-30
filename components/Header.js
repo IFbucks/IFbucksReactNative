@@ -1,11 +1,17 @@
 import { Text, View, StyleSheet } from "react-native";
-import { Feather } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 export default function Header() {
   return (
     <View style={styles.header}>
-      <Text style={styles.headerText}> IFbucks <MaterialCommunityIcons name="coffee" size={24} color="black" />  </Text>
+      <Text style={styles.headerText}>
+        {" "}
+        IFbucks <MaterialCommunityIcons
+          name="coffee"
+          size={24}
+          color="black"
+        />{" "}
+      </Text>
     </View>
   );
 }
