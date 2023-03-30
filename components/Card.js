@@ -17,8 +17,11 @@ const PhotoCard = ({ desc, imageProduct }) => {
 
   return (
     <View style={styles.card}>
-      <Image source={{ uri: imageProduct }} style={styles.image}
-      resizeMode="contain" />
+      <Image
+        source={{ uri: imageProduct }}
+        style={styles.image}
+        resizeMode="contain"
+      />
       <Text style={styles.desc}>{desc}</Text>
       <View style={styles.addContainer}>
         <TouchableOpacity style={styles.adicionar}>

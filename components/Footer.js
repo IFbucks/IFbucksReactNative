@@ -6,17 +6,18 @@ export default function Footer() {
   return (
     <View style={styles.footer}>
       <Text style={styles.footerText}>
-      </Text>
-      <Text style={styles.footerText}>
         {" "}
         <MaterialCommunityIcons
           name="cellphone-sound"
           size={24}
           color="black"
         />
-        Contact us  !
+        Contact us !
       </Text>
-      
+      <Text style={styles.footerText}>
+        <AntDesign name="copyright" size={13} color="black" />
+        Thanks for the preference =D{" "}
+      </Text>
     </View>
   );
 }
@@ -25,17 +26,7 @@ const styles = StyleSheet.create({
   footer: {
     backgroundColor: "#f1f1f1",
     padding: 5,
-    /*width: "100%",
-    alignContent: "center",
     alignItems: "center",
-    position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    height: 50,
-    backgroundColor: '#f1f1f1',
-    alignItems: 'center',
-    justifyContent: 'center',*/
   },
   footerText: {
     color: "black",
@@ -45,4 +36,4 @@ const styles = StyleSheet.create({
 });
 
 /*<AntDesign name="barcode" size={24} color="black" />
-        <AntDesign name="copyright" size={13} color="black" />*/
+ */
