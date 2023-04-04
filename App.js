@@ -7,6 +7,33 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export default function App() {
+
+  const alimentos = [
+    {
+      id: 1,
+      name: "Bebidas quentes",
+      icon: "coffee",
+      items: [
+        {
+          id: 1,
+          desc:"Simple Coffee",
+          photo: "https://storage.googleapis.com/thecoffee-ws/images/quente-vanilla-latte_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680550106&Signature=hReqhnEI0QVrnfIZNMXGF8gOWWkqeprK5eReg%2FjuzCeuTQAGz%2BHNgHwtiotEHD2eHGuwEWARUlR3yfyJhmyHP1OwVq0kQncjA3fJb%2FjmBqXY7x3G3n5Fn2jNSImoy5ZRAOZI8KwMIWx9szhF3EysTCPCkikfF2Pnzu6m88PZAw1EofXhnuFoAmmHbrCfUYSzNvZWJbloGLsb3pL%2Fynhi1AEE3SwzbmbI%2FG0MEw%2BIXfs09J8AaUl3Ggs5YxaeqrXzBiAp9uQ7NVMaYdWvkqzPt70zxVjps0OYlyOC65FJ2yyfYr%2B6YOVQw6r75gR9n%2FDemk8yXVN9gqg9c4YZuYOvQw%3D%3D"
+        },
+        {
+          id: 2,
+          desc:"Sale Matcha",
+          photo: "https://storage.googleapis.com/thecoffee-ws/images/quente-matcha-latte_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680731598&Signature=l8EzazdG4z9Ipl8Obvvld6uW1cs503TRznfJfCVZirRhFAgumyw0B16cAODmViT5yOfUd4GkqPajYLaWbuDlcaglw800dXTNKW%2FOCJpMoC93vpaioYQDLaST3UGleEA1fv2iwOQB%2BqqMQzUYsDF7JlH3hVsuw4lmwc7oq0we0YMNSq4psl1ZKF0v1fSudJB3Wh1eeaYRtNsJHkPOpSngicWGWTb0ljkDPDBGnVgmUgJHjtr3t9XganSpa5Zigxt9O5UAsZYGpCTokFswmSm4depSm281uBkhjnA9UQH56K0%2F0qVhTGLDsB76xIdBvkDh4pj0AkC9nOAZkTKLL1yvdg%3D%3D"
+        }
+      ]
+    },
+    {
+      id: 2,
+      name: "Bebidas frias",
+      icon: "coffee",
+      items: []
+    }
+  ] 
+
   return (
     <View style={styles.container}>
       <View>
@@ -14,6 +41,18 @@ export default function App() {
         <Navbar />
       </View>
       <ScrollView>
+        {
+          alimentos.map(alimento => {
+            return (
+              <Text style={styles.drinksFoodTitle}>
+              {" "}
+              {alimento.name} <Feather name={alimento.icon} size={24} color="black" />{" "}
+              </Text>              
+              
+              
+            )
+          })
+        }
         <Text style={styles.drinksFoodTitle}>
           {" "}
           Bebidas Quentes <Feather name="coffee" size={24} color="black" />{" "}
