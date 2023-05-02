@@ -40,6 +40,7 @@ export default function App() {
         <Header />
         <Navbar />
       </View>
+      <View><Text>Login</Text></View>
       <ScrollView>
         {
           alimentos.map(alimento => {
