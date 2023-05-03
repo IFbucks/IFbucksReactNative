@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { StyleSheet, ScrollView, View, Text, TextInput, TouchableOpacity, } from "react-native";
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import { Button, StyleSheet, ScrollView, View, Text, TextInput, TouchableOpacity, } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Header from "./src/components/Header";
@@ -27,7 +30,22 @@ export default function App() {
     }
   }
 
+function HomeScreen({ navigation }) {
   return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }} >
+      <Text>Tela principal</Text>
+      <Button
+        title="Ip para Detalhes"
+        onPress={() => navigation.navigate('Details')}
+      />
+    </View>
+  );
+}
+
+function DetailsScreen() {
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Tela com detalhes</Text>
     <View style={styles.container}>
       <Text style={styles.title}>Login</Text>
       <TextInput
@@ -58,6 +76,22 @@ export default function App() {
   );
 }
 
+const Stack = createNativeStackNavigator();
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen
+          name="Details"
+          component={DetailsScreen}
+          options={{ title: 'Detalhes' }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
 const styles = StyleSheet.create({
   container: {
     flex: 1,
