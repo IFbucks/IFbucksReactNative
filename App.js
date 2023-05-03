@@ -1,10 +1,10 @@
 import { StyleSheet, ScrollView, View, Text } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import Header from "./components/Header";
-import PhotoCard from "./components/Card";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Header from "./src/components/Header";
+import PhotoCard from "./src/components/Card";
+import Navbar from "./src/components/Navbar";
+import Footer from "./src/components/Footer";
 
 export default function App() {
 
