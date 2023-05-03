@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { StyleSheet, ScrollView, View, Text, TextInput, TouchableOpacity, } from "react-native";
+import { Feather } from "@expo/vector-icons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import Header from "./src/components/Header";
+import PhotoCard from "./src/components/Card";
+import Navbar from "./src/components/Navbar";
+import Footer from "./src/components/Footer";
 
 export default function App() {
   const [email, setEmail] = useState('');
