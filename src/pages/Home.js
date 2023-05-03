@@ -1,12 +1,12 @@
 import { StyleSheet, ScrollView, View, Text } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import Header from "./components/Header";
-import PhotoCard from "./components/Card";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Header from "../components/Header";
+import PhotoCard from "../components/Card";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
-export default function App() {
+export default function Home() {
 
   const alimentos = [
     {
@@ -17,7 +17,7 @@ export default function App() {
         {
           id: 1,
           desc:"Simple Coffee",
-          photo: "https://storage.googleapis.com/thecoffee-ws/images/quente-vanilla-latte_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680550106&Signature=hReqhnEI0QVrnfIZNMXGF8gOWWkqeprK5eReg%2FjuzCeuTQAGz%2BHNgHwtiotEHD2eHGuwEWARUlR3yfyJhmyHP1OwVq0kQncjA3fJb%2FjmBqXY7x3G3n5Fn2jNSImoy5ZRAOZI8KwMIWx9szhF3EysTCPCkikfF2Pnzu6m88PZAw1EofXhnuFoAmmHbrCfUYSzNvZWJbloGLsb3pL%2Fynhi1AEE3SwzbmbI%2FG0MEw%2BIXfs09J8AaUl3Ggs5YxaeqrXzBiAp9uQ7NVMaYdWvkqzPt70zxVjps0OYlyOC65FJ2yyfYr%2B6YOVQw6r75gR9n%2FDemk8yXVN9gqg9c4YZuYOvQw%3D%3D"
+          photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cup-o-coffee-simple.svg/292px-Cup-o-coffee-simple.svg.png"
         },
         {
           id: 2,
@@ -48,9 +48,7 @@ export default function App() {
               <Text style={styles.drinksFoodTitle}>
               {" "}
               {alimento.name} <Feather name={alimento.icon} size={24} color="black" />{" "}
-              </Text>              
-              
-              
+              </Text>                                        
             )
           })
         }
@@ -60,7 +58,7 @@ export default function App() {
         </Text>
         <PhotoCard
           desc="Simple Coffee"
-          imageProduct="https://storage.googleapis.com/thecoffee-ws/images/quente-vanilla-latte_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680550106&Signature=hReqhnEI0QVrnfIZNMXGF8gOWWkqeprK5eReg%2FjuzCeuTQAGz%2BHNgHwtiotEHD2eHGuwEWARUlR3yfyJhmyHP1OwVq0kQncjA3fJb%2FjmBqXY7x3G3n5Fn2jNSImoy5ZRAOZI8KwMIWx9szhF3EysTCPCkikfF2Pnzu6m88PZAw1EofXhnuFoAmmHbrCfUYSzNvZWJbloGLsb3pL%2Fynhi1AEE3SwzbmbI%2FG0MEw%2BIXfs09J8AaUl3Ggs5YxaeqrXzBiAp9uQ7NVMaYdWvkqzPt70zxVjps0OYlyOC65FJ2yyfYr%2B6YOVQw6r75gR9n%2FDemk8yXVN9gqg9c4YZuYOvQw%3D%3D"
+          imageProduct="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cup-o-coffee-simple.svg/292px-Cup-o-coffee-simple.svg.png"
         />
         <PhotoCard
           desc="Sale Matcha"
