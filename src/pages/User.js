@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Image } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import Header from "./src/components/Header";
+import Header from "../components/Header";
 
 export default function User() {
   return (

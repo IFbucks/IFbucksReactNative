@@ -12,7 +12,7 @@ export default function Login({navigation}) {
       console.log('Password:', password);
       if (email === password) {
           navigation.navigate('Home')
-      } else {
+      } else {  
         alert('senha inválida!')
       }
     };
@@ -26,6 +26,8 @@ export default function Login({navigation}) {
         setIsEmailValid(false);
       }
     }
+
+
   
     return (
       <View style={styles.container}>

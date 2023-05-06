@@ -6,6 +6,7 @@ import { Button, StyleSheet, ScrollView, View, Text, TextInput, TouchableOpacity
 
 import Login from './src/pages/Login';
 import Home from './src/pages/Home';
+import User from "./src/pages/User"
 
 import { Feather } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -44,6 +45,8 @@ export default function App() {
       <Stack.Navigator initialRouteName="Login">
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Home" component={Home} options={{headerShown: false}}/>
+        <Stack.Screen name="User" component={User} options={{headerShown: false}}/>
+        
         <Stack.Screen
           name="Details"
           component={DetailsScreen}

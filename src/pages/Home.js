@@ -6,7 +6,11 @@ import PhotoCard from "../components/Card";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-export default function Home() {
+export default function Home({navigation}) {
+
+  function handleButtonUser(){
+      navigation.navigate("User")
+  }
 
   const alimentos = [
     {
@@ -38,7 +42,7 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <View>
-        <Header />
+        <Header handleButtonUser={handleButtonUser} />
         <Navbar />
       </View>
       <ScrollView>

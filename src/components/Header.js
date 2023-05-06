@@ -1,17 +1,13 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, Button } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-export default function Header() {
+export default function Header({ handleButtonUser }) {
   return (
     <View style={styles.header}>
       <Text style={styles.headerText}>
-        {" "}
-        IFbucks <MaterialCommunityIcons
-          name="coffee"
-          size={24}
-          color="black"
-        />{" "}
+        IFbucks <MaterialCommunityIcons name="coffee" size={24} color="black" />
       </Text>
+      <Button title="User" onPress={handleButtonUser}></Button>
     </View>
   );
 }
