@@ -26,7 +26,7 @@ export default function Home({navigation}) {
         {
           id: 2,
           desc:"Sale Matcha",
-          photo: "https://storage.googleapis.com/thecoffee-ws/images/quente-matcha-latte_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680731598&Signature=l8EzazdG4z9Ipl8Obvvld6uW1cs503TRznfJfCVZirRhFAgumyw0B16cAODmViT5yOfUd4GkqPajYLaWbuDlcaglw800dXTNKW%2FOCJpMoC93vpaioYQDLaST3UGleEA1fv2iwOQB%2BqqMQzUYsDF7JlH3hVsuw4lmwc7oq0we0YMNSq4psl1ZKF0v1fSudJB3Wh1eeaYRtNsJHkPOpSngicWGWTb0ljkDPDBGnVgmUgJHjtr3t9XganSpa5Zigxt9O5UAsZYGpCTokFswmSm4depSm281uBkhjnA9UQH56K0%2F0qVhTGLDsB76xIdBvkDh4pj0AkC9nOAZkTKLL1yvdg%3D%3D"
+          photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cup-o-coffee-simple.svg/292px-Cup-o-coffee-simple.svg.png"
         }
       ]
     },
@@ -66,7 +66,7 @@ export default function Home({navigation}) {
         />
         <PhotoCard
           desc="Sale Matcha"
-          imageProduct="https://storage.googleapis.com/thecoffee-ws/images/quente-matcha-latte_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680731598&Signature=l8EzazdG4z9Ipl8Obvvld6uW1cs503TRznfJfCVZirRhFAgumyw0B16cAODmViT5yOfUd4GkqPajYLaWbuDlcaglw800dXTNKW%2FOCJpMoC93vpaioYQDLaST3UGleEA1fv2iwOQB%2BqqMQzUYsDF7JlH3hVsuw4lmwc7oq0we0YMNSq4psl1ZKF0v1fSudJB3Wh1eeaYRtNsJHkPOpSngicWGWTb0ljkDPDBGnVgmUgJHjtr3t9XganSpa5Zigxt9O5UAsZYGpCTokFswmSm4depSm281uBkhjnA9UQH56K0%2F0qVhTGLDsB76xIdBvkDh4pj0AkC9nOAZkTKLL1yvdg%3D%3D"
+          imageProduct="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cup-o-coffee-simple.svg/292px-Cup-o-coffee-simple.svg.png"
         />
         <PhotoCard
           desc="Simple Black"
