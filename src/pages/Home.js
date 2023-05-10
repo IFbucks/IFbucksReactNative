@@ -70,15 +70,15 @@ export default function Home({navigation}) {
         />
         <PhotoCard
           desc="Simple Black"
-          imageProduct="https://storage.googleapis.com/thecoffee-ws/images/purista-americano_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680731598&Signature=d98ZH9VThxHvTFtPMSO%2Bdc%2Fc3Mbg%2BwqpZc873cQrWl2Hlpb6qqTy7RdUJvO%2BvzI7oAsxYZwgInKqs%2FSTmdYrg1nC3Bj1Co%2BpUT0QyQfCqP1n%2FNcBdIRdf83vLI75sm%2FlQzatuMBfmw0Gt67Xhk19oWHVMwufdj8dY7hrS3GQ73szSQwXdAPN88apDxIvPyAYHVsJiQvX8fTdzLDhOwiL6QxaEbVq06daxLI1m6ffdZV7EERp4GQjurQW4kwQeGpkUspItPaKCWsk3VYABnzqJz%2Fhl274H9ZFeddmOuI8lvHz4nMFshbVEr%2FO9It3WtTOgqWUxVvGSerrwTP%2F%2B9z84w%3D%3D"
+          imageProduct="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cup-o-coffee-simple.svg/292px-Cup-o-coffee-simple.svg.png"
         />
         <PhotoCard
           desc="Chai Latte"
-          imageProduct="https://storage.googleapis.com/thecoffee-ws/images/quente-chai-latte_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680732778&Signature=SLXfm4Az7Pq8HAG6UD3ZD0eJQoq1Bmd4bnyMBq38j3%2FiRU8qf7nazP%2FOU0C3MhNkI9bu2wiIqiIFwBQIkY2DXRoOpNAMOtkoL4%2BzNIYqPqB9vhsc%2FYvjEh7N0bB7Tq%2BjaleWWQ0Hqyl%2BWtk2Ry%2FM81bnXMrIFloptOsroA2ZKWhBvqsnDBN44oX1o%2BSuxwE9syGyiz8RV4%2B8QWjeI0XgyleqJiKObFiLj4AudsJdh1rbwJ%2FwJ4FyaFZjXLiBLYwvRouf7RM5w0h0YPsAHwAf7QHy7Ei4zcPYw9EJQUzkIlWUPYDW4URlGQJ6jwBx3TfDBG3%2F01Xp83CgeK94%2F8reSg%3D%3D"
+          imageProduct="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cup-o-coffee-simple.svg/292px-Cup-o-coffee-simple.svg.png"
         />
         <PhotoCard
           desc="Urban Coffee"
-          imageProduct="https://storage.googleapis.com/thecoffee-ws/images/quente-urban-chocolat_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680736593&Signature=SvrTyEP%2FcaH9RFq6YPLK7CDG7HTs8%2Bqgjg%2F35lULTKavOy5bFXhMZcpgP32R9aTBVlDE5zpLecu4BA5%2FGlHSdBBObbklVNRji4AySK0fQe%2BLl%2FuxfTDjCGmquHr5KKeD3A2%2BJPeYrVGtZ4SIufnlKvc%2FTrxn6IqM0k2pdKBzZQmeL0c641J5TgDROR03o3C7%2Bs9ZNwaobL%2BTu8Qt%2FRDiPE8p8MjVkp7CGyzSQNbNKpCcydErS3XJoDbVsr5%2Bx0SfAjiRoUY4EOA3tXKFbTVYAMN%2FRIBtHFdi%2Fkj69XdxT1sCfr0g2EDJV%2FQ7xObgjKxFUGAGgvgUG4seBhR5EQvRuw%3D%3D"
+          imageProduct="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cup-o-coffee-simple.svg/292px-Cup-o-coffee-simple.svg.png"
         />
         <Text style={styles.drinksFoodTitle}>
           {" "}
@@ -86,11 +86,11 @@ export default function Home({navigation}) {
         </Text>
         <PhotoCard
           desc="Chai Iced Latte"
-          imageProduct="https://storage.googleapis.com/thecoffee-ws/images/coado-gelado-com-leite_480x480.png?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680731600&Signature=kpWJp0teADu9nJ4%2F6LEmXBJwbIKmlZ9L2BhoaE6%2F4h7xIX9IVGThQXZfbjOzCScdW6iSPMhxIS3Quo%2BR6z5mIoKOkscp3IlBI12r0S%2B8aE%2BqmkWv7N2x2YsN92USgzvggdjsSHncGGuvtdnXPkbHQJbM6bohvs0XUlIbYbQDs6w094xkAdj0MbvlaYZmlaAowXLniHcluzruywAbSwqX5ADj3PX90H7AFxS1c%2Bgq%2FHX%2Bh4lZcw4O%2BO0cjBtK8Ko1vFvmrCqWJcLmGfVMP7rFgXpOk8BsRKnldDwKoJzWIuPmY8I93LiWciPq5BPXZM69D8VAoqH7H8tz6jwcHrCoyg%3D%3D"
+          imageProduct="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cup-o-coffee-simple.svg/292px-Cup-o-coffee-simple.svg.png"
         />
         <PhotoCard
           desc="Salted Caramel"
-          imageProduct="https://storage.googleapis.com/thecoffee-ws/images/saltedcaramel_480x480.jpg?GoogleAccessId=thecoffee-ws%40thecoffee-gke.iam.gserviceaccount.com&Expires=1680550107&Signature=XJiviCzj3Ojb%2FCmRZFZssoAnUNhyYIZbrqDlTHKyHOe4e5VsCoFGDWMtMaoB88azLAi0kFhL%2FoqgWSvdODOlA979rP0168OpqNT%2Bs1qkwwYk8jXbgJBMHbjyeUusqWQDuyKhwxF5TQQ2pAVEzaTX%2BjuBIaSVTCQ0G45UpIQ8VfZGAn4CZDB2LfsPZN4ZmXaQVJbw4%2Fgm4B4%2BwnnbofyIhX42FhITvFbUhvr7J5JoFgyKbW0pGWAeOfbOKeAeBNrcYcud%2F%2F5FR9rzcz1%2FpCBRkpFm7z8x5K7ln5kPJoF7F%2Fxzo2G7JfZtQCV9mOxefgJhiFreqgVUJ%2B8sGJb5jaj1OQ%3D%3D"
+          imageProduct="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cup-o-coffee-simple.svg/292px-Cup-o-coffee-simple.svg.png"
         />
         <PhotoCard
           desc="Vanilla Frappé"
